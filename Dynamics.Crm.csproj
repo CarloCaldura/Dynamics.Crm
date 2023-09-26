@@ -96,6 +96,7 @@
     <Compile Include="BasicPlugin.cs" />
     <Compile Include="common\Entities.cs" />
     <Compile Include="common\OptionSets.cs" />
+    <Compile Include="PluginMarketing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
