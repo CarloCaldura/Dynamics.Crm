@@ -501,6 +501,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_ald_boutique
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_boutique")]
+		public Dynamics.Crm.Common.Team team_ald_boutique
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_boutique", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -1425,6 +1439,20 @@ namespace Dynamics.Crm.Common
 				this.OnPropertyChanging("ald_ald_lead_token_ald_securitytoken");
 				this.SetRelatedEntity<Dynamics.Crm.Common.ald_securitytoken>("ald_ald_lead_token_ald_securitytoken", null, value);
 				this.OnPropertyChanged("ald_ald_lead_token_ald_securitytoken");
+			}
+		}
+		
+		/// <summary>
+		/// N:1 team_ald_lead
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_lead")]
+		public Dynamics.Crm.Common.Team team_ald_lead
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_lead", null);
 			}
 		}
 		
@@ -2735,6 +2763,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_ald_order
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_order")]
+		public Dynamics.Crm.Common.Team team_ald_order
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_order", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -3304,6 +3346,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_ald_orderdetail
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_orderdetail")]
+		public Dynamics.Crm.Common.Team team_ald_orderdetail
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_orderdetail", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -3827,6 +3883,20 @@ namespace Dynamics.Crm.Common
 				this.OnPropertyChanging("ald_ald_orderdetail_product_ald_product");
 				this.SetRelatedEntities<Dynamics.Crm.Common.ald_orderdetail>("ald_ald_orderdetail_product_ald_product", null, value);
 				this.OnPropertyChanged("ald_ald_orderdetail_product_ald_product");
+			}
+		}
+		
+		/// <summary>
+		/// N:1 team_ald_product
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_product")]
+		public Dynamics.Crm.Common.Team team_ald_product
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_product", null);
 			}
 		}
 		
@@ -4458,6 +4528,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_ald_quote
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_quote")]
+		public Dynamics.Crm.Common.Team team_ald_quote
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_quote", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -5007,6 +5091,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_ald_securityquestion
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_securityquestion")]
+		public Dynamics.Crm.Common.Team team_ald_securityquestion
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_securityquestion", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -5530,6 +5628,20 @@ namespace Dynamics.Crm.Common
 				this.OnPropertyChanging("ald_ald_lead_token_ald_securitytoken");
 				this.SetRelatedEntities<Dynamics.Crm.Common.ald_lead>("ald_ald_lead_token_ald_securitytoken", null, value);
 				this.OnPropertyChanged("ald_ald_lead_token_ald_securitytoken");
+			}
+		}
+		
+		/// <summary>
+		/// N:1 team_ald_securitytoken
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_securitytoken")]
+		public Dynamics.Crm.Common.Team team_ald_securitytoken
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_ald_securitytoken", null);
 			}
 		}
 		
@@ -10416,6 +10528,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_contacts
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_contacts")]
+		public Dynamics.Crm.Common.Team team_contacts
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_contacts", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -11465,6 +11591,20 @@ namespace Dynamics.Crm.Common
 		}
 		
 		/// <summary>
+		/// N:1 team_task
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("owningteam")]
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_task")]
+		public Dynamics.Crm.Common.Team team_task
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntity<Dynamics.Crm.Common.Team>("team_task", null);
+			}
+		}
+		
+		/// <summary>
 		/// Constructor for populating via LINQ queries given a LINQ anonymous type
 		/// <param name="anonymousType">LINQ anonymous type.</param>
 		/// </summary>
@@ -11490,6 +11630,908 @@ namespace Dynamics.Crm.Common
                         Attributes["activityid"] = base.Id;
                         break;
                     case "activityid":
+                        var id = (System.Nullable<System.Guid>) value;
+                        if(id == null){ continue; }
+                        base.Id = id.Value;
+                        Attributes[name] = base.Id;
+                        break;
+                    case "formattedvalues":
+                        // Add Support for FormattedValues
+                        FormattedValues.AddRange((Microsoft.Xrm.Sdk.FormattedValueCollection)value);
+                        break;
+                    default:
+                        Attributes[name] = value;
+                        break;
+                }
+            }
+		}
+	}
+	
+	/// <summary>
+	/// Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
+	/// </summary>
+	[System.Runtime.Serialization.DataContractAttribute()]
+	[Microsoft.Xrm.Sdk.Client.EntityLogicalNameAttribute("team")]
+	public partial class Team : Microsoft.Xrm.Sdk.Entity, System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	{
+		
+		/// <summary>
+		/// Default Constructor.
+		/// </summary>
+		[System.Diagnostics.DebuggerNonUserCode()]
+		public Team() : 
+				base(EntityLogicalName)
+		{
+		}
+		
+		public const string AlternateKeys = "azureactivedirectoryobjectid,membershiptype";
+		
+		public const string EntityLogicalName = "team";
+		
+		public const string EntitySchemaName = "Team";
+		
+		public const string PrimaryIdAttribute = "teamid";
+		
+		public const string PrimaryNameAttribute = "name";
+		
+		public const string EntityLogicalCollectionName = "teams";
+		
+		public const string EntitySetName = "teams";
+		
+		public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+		
+		public event System.ComponentModel.PropertyChangingEventHandler PropertyChanging;
+		
+		[System.Diagnostics.DebuggerNonUserCode()]
+		private void OnPropertyChanged(string propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		[System.Diagnostics.DebuggerNonUserCode()]
+		private void OnPropertyChanging(string propertyName)
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, new System.ComponentModel.PropertyChangingEventArgs(propertyName));
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the user primary responsible for the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("administratorid")]
+		public Microsoft.Xrm.Sdk.EntityReference AdministratorId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("administratorid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("AdministratorId");
+				this.SetAttributeValue("administratorid", value);
+				this.OnPropertyChanged("AdministratorId");
+			}
+		}
+		
+		/// <summary>
+		/// The Azure active directory object Id for a group.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("azureactivedirectoryobjectid")]
+		public System.Nullable<System.Guid> AzureActiveDirectoryObjectId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.Guid>>("azureactivedirectoryobjectid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("AzureActiveDirectoryObjectId");
+				this.SetAttributeValue("azureactivedirectoryobjectid", value);
+				this.OnPropertyChanged("AzureActiveDirectoryObjectId");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the business unit with which the team is associated.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("businessunitid")]
+		public Microsoft.Xrm.Sdk.EntityReference BusinessUnitId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("businessunitid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("BusinessUnitId");
+				this.SetAttributeValue("businessunitid", value);
+				this.OnPropertyChanged("BusinessUnitId");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the user who created the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdby")]
+		public Microsoft.Xrm.Sdk.EntityReference CreatedBy
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("createdby");
+			}
+		}
+		
+		/// <summary>
+		/// Date and time when the team was created.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdon")]
+		public System.Nullable<System.DateTime> CreatedOn
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.DateTime>>("createdon");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the delegate user who created the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("createdonbehalfby")]
+		public Microsoft.Xrm.Sdk.EntityReference CreatedOnBehalfBy
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("createdonbehalfby");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("CreatedOnBehalfBy");
+				this.SetAttributeValue("createdonbehalfby", value);
+				this.OnPropertyChanged("CreatedOnBehalfBy");
+			}
+		}
+		
+		/// <summary>
+		/// The delegated authorization context for the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("delegatedauthorizationid")]
+		public Microsoft.Xrm.Sdk.EntityReference DelegatedAuthorizationId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("delegatedauthorizationid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("DelegatedAuthorizationId");
+				this.SetAttributeValue("delegatedauthorizationid", value);
+				this.OnPropertyChanged("DelegatedAuthorizationId");
+			}
+		}
+		
+		/// <summary>
+		/// Description of the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("description")]
+		public string Description
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("description");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("Description");
+				this.SetAttributeValue("description", value);
+				this.OnPropertyChanged("Description");
+			}
+		}
+		
+		/// <summary>
+		/// Email address for the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("emailaddress")]
+		public string EMailAddress
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("emailaddress");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("EMailAddress");
+				this.SetAttributeValue("emailaddress", value);
+				this.OnPropertyChanged("EMailAddress");
+			}
+		}
+		
+		/// <summary>
+		/// Exchange rate for the currency associated with the team with respect to the base currency.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("exchangerate")]
+		public System.Nullable<decimal> ExchangeRate
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<decimal>>("exchangerate");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the data import or data migration that created this record.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("importsequencenumber")]
+		public System.Nullable<int> ImportSequenceNumber
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<int>>("importsequencenumber");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("ImportSequenceNumber");
+				this.SetAttributeValue("importsequencenumber", value);
+				this.OnPropertyChanged("ImportSequenceNumber");
+			}
+		}
+		
+		/// <summary>
+		/// Information about whether the team is a default business unit team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("isdefault")]
+		public System.Nullable<bool> IsDefault
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<bool>>("isdefault");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("issastokenset")]
+		public System.Nullable<bool> IsSasTokenSet
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<bool>>("issastokenset");
+			}
+		}
+		
+		/// <summary>
+		/// 
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("membershiptype")]
+		public virtual Team_MembershipType? MembershipType
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return ((Team_MembershipType?)(EntityOptionSetEnum.GetEnum(this, "membershiptype")));
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("MembershipType");
+				this.SetAttributeValue("membershiptype", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
+				this.OnPropertyChanged("MembershipType");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the user who last modified the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedby")]
+		public Microsoft.Xrm.Sdk.EntityReference ModifiedBy
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedby");
+			}
+		}
+		
+		/// <summary>
+		/// Date and time when the team was last modified.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedon")]
+		public System.Nullable<System.DateTime> ModifiedOn
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.DateTime>>("modifiedon");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the delegate user who last modified the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("modifiedonbehalfby")]
+		public Microsoft.Xrm.Sdk.EntityReference ModifiedOnBehalfBy
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("modifiedonbehalfby");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("ModifiedOnBehalfBy");
+				this.SetAttributeValue("modifiedonbehalfby", value);
+				this.OnPropertyChanged("ModifiedOnBehalfBy");
+			}
+		}
+		
+		/// <summary>
+		/// Name of the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("name")]
+		public string Name
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("name");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("Name");
+				this.SetAttributeValue("name", value);
+				this.OnPropertyChanged("Name");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the organization associated with the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("organizationid")]
+		public System.Nullable<System.Guid> OrganizationId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.Guid>>("organizationid");
+			}
+		}
+		
+		/// <summary>
+		/// Date and time that the record was migrated.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("overriddencreatedon")]
+		public System.Nullable<System.DateTime> OverriddenCreatedOn
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.DateTime>>("overriddencreatedon");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("OverriddenCreatedOn");
+				this.SetAttributeValue("overriddencreatedon", value);
+				this.OnPropertyChanged("OverriddenCreatedOn");
+			}
+		}
+		
+		/// <summary>
+		/// Shows the ID of the process.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("processid")]
+		public System.Nullable<System.Guid> ProcessId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.Guid>>("processid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("ProcessId");
+				this.SetAttributeValue("processid", value);
+				this.OnPropertyChanged("ProcessId");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the default queue for the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("queueid")]
+		public Microsoft.Xrm.Sdk.EntityReference QueueId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("queueid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("QueueId");
+				this.SetAttributeValue("queueid", value);
+				this.OnPropertyChanged("QueueId");
+			}
+		}
+		
+		/// <summary>
+		/// Choose the record that the team relates to.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("regardingobjectid")]
+		public Microsoft.Xrm.Sdk.EntityReference RegardingObjectId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("regardingobjectid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("RegardingObjectId");
+				this.SetAttributeValue("regardingobjectid", value);
+				this.OnPropertyChanged("RegardingObjectId");
+			}
+		}
+		
+		/// <summary>
+		/// For internal use only.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("sharelinkqualifier")]
+		public string ShareLinkQualifier
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("sharelinkqualifier");
+			}
+		}
+		
+		/// <summary>
+		/// Shows the ID of the stage.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("stageid")]
+		public System.Nullable<System.Guid> StageId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.Guid>>("stageid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("StageId");
+				this.SetAttributeValue("stageid", value);
+				this.OnPropertyChanged("StageId");
+			}
+		}
+		
+		/// <summary>
+		/// Select whether the team will be managed by the system.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("systemmanaged")]
+		public System.Nullable<bool> SystemManaged
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<bool>>("systemmanaged");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier for the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("teamid")]
+		public System.Nullable<System.Guid> TeamId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<System.Guid>>("teamid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("TeamId");
+				this.SetAttributeValue("teamid", value);
+				if (value.HasValue)
+				{
+					base.Id = value.Value;
+				}
+				else
+				{
+					base.Id = System.Guid.Empty;
+				}
+				this.OnPropertyChanged("TeamId");
+			}
+		}
+		
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("teamid")]
+		public override System.Guid Id
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return base.Id;
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.TeamId = value;
+			}
+		}
+		
+		/// <summary>
+		/// Shows the team template that is associated with the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("teamtemplateid")]
+		public Microsoft.Xrm.Sdk.EntityReference TeamTemplateId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("teamtemplateid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("TeamTemplateId");
+				this.SetAttributeValue("teamtemplateid", value);
+				this.OnPropertyChanged("TeamTemplateId");
+			}
+		}
+		
+		/// <summary>
+		/// Select the team type.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("teamtype")]
+		public virtual Team_TeamType? TeamType
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return ((Team_TeamType?)(EntityOptionSetEnum.GetEnum(this, "teamtype")));
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("TeamType");
+				this.SetAttributeValue("teamtype", value.HasValue ? new Microsoft.Xrm.Sdk.OptionSetValue((int)value) : null);
+				this.OnPropertyChanged("TeamType");
+			}
+		}
+		
+		/// <summary>
+		/// Unique identifier of the currency associated with the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("transactioncurrencyid")]
+		public Microsoft.Xrm.Sdk.EntityReference TransactionCurrencyId
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<Microsoft.Xrm.Sdk.EntityReference>("transactioncurrencyid");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("TransactionCurrencyId");
+				this.SetAttributeValue("transactioncurrencyid", value);
+				this.OnPropertyChanged("TransactionCurrencyId");
+			}
+		}
+		
+		/// <summary>
+		/// For internal use only.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("traversedpath")]
+		public string TraversedPath
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("traversedpath");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("TraversedPath");
+				this.SetAttributeValue("traversedpath", value);
+				this.OnPropertyChanged("TraversedPath");
+			}
+		}
+		
+		/// <summary>
+		/// Version number of the team.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("versionnumber")]
+		public System.Nullable<long> VersionNumber
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<System.Nullable<long>>("versionnumber");
+			}
+		}
+		
+		/// <summary>
+		/// Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters.
+		/// </summary>
+		[Microsoft.Xrm.Sdk.AttributeLogicalNameAttribute("yominame")]
+		public string YomiName
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetAttributeValue<string>("yominame");
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("YomiName");
+				this.SetAttributeValue("yominame", value);
+				this.OnPropertyChanged("YomiName");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_boutique
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_boutique")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_boutique> team_ald_boutique
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_boutique>("team_ald_boutique", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_boutique");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_boutique>("team_ald_boutique", null, value);
+				this.OnPropertyChanged("team_ald_boutique");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_lead
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_lead")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_lead> team_ald_lead
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_lead>("team_ald_lead", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_lead");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_lead>("team_ald_lead", null, value);
+				this.OnPropertyChanged("team_ald_lead");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_order
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_order")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_order> team_ald_order
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_order>("team_ald_order", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_order");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_order>("team_ald_order", null, value);
+				this.OnPropertyChanged("team_ald_order");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_orderdetail
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_orderdetail")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_orderdetail> team_ald_orderdetail
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_orderdetail>("team_ald_orderdetail", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_orderdetail");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_orderdetail>("team_ald_orderdetail", null, value);
+				this.OnPropertyChanged("team_ald_orderdetail");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_product
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_product")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_product> team_ald_product
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_product>("team_ald_product", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_product");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_product>("team_ald_product", null, value);
+				this.OnPropertyChanged("team_ald_product");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_quote
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_quote")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_quote> team_ald_quote
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_quote>("team_ald_quote", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_quote");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_quote>("team_ald_quote", null, value);
+				this.OnPropertyChanged("team_ald_quote");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_securityquestion
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_securityquestion")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_securityquestion> team_ald_securityquestion
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_securityquestion>("team_ald_securityquestion", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_securityquestion");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_securityquestion>("team_ald_securityquestion", null, value);
+				this.OnPropertyChanged("team_ald_securityquestion");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_ald_securitytoken
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_ald_securitytoken")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.ald_securitytoken> team_ald_securitytoken
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.ald_securitytoken>("team_ald_securitytoken", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_ald_securitytoken");
+				this.SetRelatedEntities<Dynamics.Crm.Common.ald_securitytoken>("team_ald_securitytoken", null, value);
+				this.OnPropertyChanged("team_ald_securitytoken");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_contacts
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_contacts")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.Contact> team_contacts
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.Contact>("team_contacts", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_contacts");
+				this.SetRelatedEntities<Dynamics.Crm.Common.Contact>("team_contacts", null, value);
+				this.OnPropertyChanged("team_contacts");
+			}
+		}
+		
+		/// <summary>
+		/// 1:N team_task
+		/// </summary>
+		[Microsoft.Xrm.Sdk.RelationshipSchemaNameAttribute("team_task")]
+		public System.Collections.Generic.IEnumerable<Dynamics.Crm.Common.Task> team_task
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.GetRelatedEntities<Dynamics.Crm.Common.Task>("team_task", null);
+			}
+			[System.Diagnostics.DebuggerNonUserCode()]
+			set
+			{
+				this.OnPropertyChanging("team_task");
+				this.SetRelatedEntities<Dynamics.Crm.Common.Task>("team_task", null, value);
+				this.OnPropertyChanged("team_task");
+			}
+		}
+		
+		/// <summary>
+		/// Constructor for populating via LINQ queries given a LINQ anonymous type
+		/// <param name="anonymousType">LINQ anonymous type.</param>
+		/// </summary>
+		[System.Diagnostics.DebuggerNonUserCode()]
+		public Team(object anonymousType) : 
+				this()
+		{
+            foreach (var p in anonymousType.GetType().GetProperties())
+            {
+                var value = p.GetValue(anonymousType, null);
+                var name = p.Name.ToLower();
+            
+                if (name.EndsWith("enum") && value.GetType().BaseType == typeof(System.Enum))
+                {
+                    value = new Microsoft.Xrm.Sdk.OptionSetValue((int) value);
+                    name = name.Remove(name.Length - "enum".Length);
+                }
+            
+                switch (name)
+                {
+                    case "id":
+                        base.Id = (System.Guid)value;
+                        Attributes["teamid"] = base.Id;
+                        break;
+                    case "teamid":
                         var id = (System.Nullable<System.Guid>) value;
                         if(id == null){ continue; }
                         base.Id = id.Value;
@@ -11651,6 +12693,18 @@ namespace Dynamics.Crm.Common
 			get
 			{
 				return this.CreateQuery<Dynamics.Crm.Common.Task>();
+			}
+		}
+		
+		/// <summary>
+		/// Gets a binding to the set of all <see cref="Dynamics.Crm.Common.Team"/> entities.
+		/// </summary>
+		public System.Linq.IQueryable<Dynamics.Crm.Common.Team> TeamSet
+		{
+			[System.Diagnostics.DebuggerNonUserCode()]
+			get
+			{
+				return this.CreateQuery<Dynamics.Crm.Common.Team>();
 			}
 		}
 	}

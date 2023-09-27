@@ -735,6 +735,48 @@ namespace Dynamics.Crm.Common
 	}
 	
 	[System.Runtime.Serialization.DataContractAttribute()]
+	public enum Team_MembershipType
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Guests", 3)]
+		Guests = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Members", 1)]
+		Members = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Members and guests", 0)]
+		Membersandguests = 0,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Owners", 2)]
+		Owners = 2,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
+	public enum Team_TeamType
+	{
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("AAD Office Group", 3)]
+		AADOfficeGroup = 3,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("AAD Security Group", 2)]
+		AADSecurityGroup = 2,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Access", 1)]
+		Access = 1,
+		
+		[System.Runtime.Serialization.EnumMemberAttribute()]
+		[OptionSetMetadataAttribute("Owner", 0)]
+		Owner = 0,
+	}
+	
+	[System.Runtime.Serialization.DataContractAttribute()]
 	public enum appaction_ClientType
 	{
 		
