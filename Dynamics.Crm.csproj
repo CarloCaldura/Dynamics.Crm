@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicPlugin.cs" />
+    <Compile Include="BoutiqueCustomAPI.cs" />
     <Compile Include="common\Entities.cs" />
     <Compile Include="common\OptionSets.cs" />
     <Compile Include="PluginMarketing.cs" />

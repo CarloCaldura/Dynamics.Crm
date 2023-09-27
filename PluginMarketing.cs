@@ -24,17 +24,17 @@ namespace Dynamics.Crm
                 Entity contact = (Entity)context.InputParameters["Target"];
                 Contact postImage = context.PostEntityImages["PostImage"].ToEntity<Contact>();
 
-                bool allowmarketing = postImage.ald_consensoprivacy == true || postImage.ald_mail == true;
+                bool allowmarketing = (postImage.ald_consensoprivacy == true || postImage.ald_mail == true);
 
                 if (allowmarketing) 
                 { 
-                    Entity Task = new Contact("Task");
+                    Entity contactTask = new Contact("Task");
 
-                    Task.Id = contact.Id;
-                    Task["subject"] = "nuovo task";
-                    Task["Description"] = "Task creata all' aggiornarsi dei consensi";
+                    contactTask.Id = contact.Id;
+                    contactTask["subject"] = "nuovo task";
+                    contactTask["Description"] = "Task creata all' aggiornarsi dei consensi";
 
-                    service.Create(Task);
+                    service.Create(contactTask);
                 }
             }
 
