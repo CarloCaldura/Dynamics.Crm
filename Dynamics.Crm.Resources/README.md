@@ -1,0 +1,3 @@
+# Dynamics.Crm.Resources
+
+

@@ -1,0 +1,13 @@
+{
+  "name": "dynamics.crm.resources",
+  "version": "0.0.0",
+  "description": "Dynamics.Crm.Resources",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "eslintConfig": {}
+}
