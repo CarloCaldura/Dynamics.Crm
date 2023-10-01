@@ -16,20 +16,18 @@ formlogic = {
     //funzione per assegnare default boutique a contact quando viene creato
     assignDefaultBoutique: function () {
 
-        debugger;
-
         let fetchXml = `
                         <fetch>
                           <entity name="ald_boutique">
-                            <attribute name="ald_boutiqueid" />
                             <attribute name="ald_name" />
+                            <attribute name="ald_boutiqueid" />
                             <filter>
                               <condition attribute="ald_name" operator="eq" value="Default boutique" />
                             </filter>
                           </entity>
                         </fetch>`
 
-        fetchXml = "?fecthXml= " + encodeURIComponent(fetchXml);
+        requestFetchXml = "?fecthXml= " + encodeURIComponent(fetchXml);
 
         // Inizializza variabili così il codice è riutilizzabile
         let entityName = "ald_boutique";
@@ -37,23 +35,26 @@ formlogic = {
         let defaultValue = "Default boutique";
 
         //Query OData
-        //var query = "?$filter= " + columnName + " eq '" + defaultValue + "'";
+        var query = "?$filter= " + columnName + " eq '" + defaultValue + "'";
 
         // Use Web Api to retrive the record
-        window.Xrm.WebApi.retrieveMultipleRecords(entityName, fetchXml).then(
+        window.Xrm.WebApi.retrieveMultipleRecords(entityName, query).then(
             function success(result) {
-                if (result.entities.lenght != null && result.entities.lenght > 0) {
+                if (result.entities != null && result.entities.length > 0) {
 
-                    let recordid = result.entities[0]["ald_boutiqueid"];
+                    let recordId = result.entities[0][entityName + "id"];
                     let recordName = result.entities[0]["ald_name"];
 
-                    let lookup = new Array();
-                    lookup[0] = new Object();
-                    lookup[0]["id"] = recordid;
-                    lookup[0]["name"] = recordName;
-                    lookup[0]["entityType"] = entityName;
+                    let lookupFieldName = "ald_originating_boutique"
 
-                    formContext.getAttribute("ald_originating_boutique").setValue(lookup);
+                    let lookup = new Array();
+
+                    lookup[0] = new Object();
+                    lookup[0]["id"] = recordId;
+                    lookup[0]["entityType"] = entityName;
+                    lookup[0]["name"] = recordName;
+
+                    formContext.getAttribute(lookupFieldName).setValue(lookup)
 
                 }
                 else {
